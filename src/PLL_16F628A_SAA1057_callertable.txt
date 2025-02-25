@@ -1,0 +1,11 @@
+main
+	SendWordB
+		bit_delay
+		Send_Bit
+			bit_delay
+	Mul_16X16_U
+	SendFrequency
+		bit_delay
+		Send_Bit
+			bit_delay
+	signal_delay

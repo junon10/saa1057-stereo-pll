@@ -1,0 +1,11 @@
+main
+	EnviarWordB
+		pausa
+		Enviar_Bit
+			pausa
+	Mul_16x16_U
+	EnviarFrequencia
+		pausa
+		Enviar_Bit
+			pausa
+	delaySinal
