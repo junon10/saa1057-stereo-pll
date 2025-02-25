@@ -2,14 +2,10 @@
 
 ## Description
 
-A MikroC code that provides functions to configure and operate the SAA1057 PLL integrated circuit. This library enables control over various aspects of the PLL's operation.
+A MikroC code that provides functions to configure and operate the SAA1057 PLL integrated circuit.
 
 ## Schematic
-
-<br/>
-<h2>SAA1057 Stereo Pll</h2>
 <img src="images/Schematic.png" />
-<br/>
 
 ## Features
 
@@ -21,7 +17,7 @@ A MikroC code that provides functions to configure and operate the SAA1057 PLL i
 
 - **MikroC Pro for PIC**: To compile the source code.
 - **Hardware**: SAA1057 PLL circuit integrated, PIC16F628A Microcontroller.
-- **Timebase**: 7.6MHz and 4MHz xtals.
+- **time base**: 7.6MHz and 4MHz xtals.
 
 ## Installation
 
