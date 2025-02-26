@@ -55,3 +55,9 @@ Contributions are welcome! Please fork the repository and send a pull request.
 ## Changelog
 
 - **v1.0.0 (2011/09/15)**: Initial commit.
+
+## License
+
+- GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+
+
