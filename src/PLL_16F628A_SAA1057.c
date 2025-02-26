@@ -1,6 +1,6 @@
 /*
   ------------------------------------------------------------------------------
-  Project: SAA1057 DipSwitch PLL Controller
+  Project: SAA1057 DipSwitch Stereo PLL Controller
   Author: Junon M
   Date: 15/09/2011
   Compiler: MikroC Pro for PIC
@@ -8,11 +8,8 @@
 */
 
 //------------------------------------------------------------------------------
-#define  Factor  1080 // FM Transmitter
-//#define  Factor  1187 // FM Receiver (F + 10,7MHz)
-//#define  Factor  973  // FM Receiver (F - 10,7MHz)
+#define  Factor  1080
 //------------------------------------------------------------------------------
-
 
 //------------------------------------------------------------------------------
 // WordB Table
@@ -254,21 +251,22 @@ void main(){
    SendFrequency(Frequency);
    //---------------------------------------------------------------------------
 
-   // Complete cycle of (38KHz) 26.316 uS
-   // Audio channels must be activated and deactivated alternately
-   // every 13.158 uS
-   // Complete pilot signal cycle (19KHz) 52.63uS
+/*
+    Complete cycle of (38KHz) 26.316 uS
+    Audio channels must be activated and deactivated alternately
+    every 13.158 uS
+    Complete pilot signal cycle (19KHz) 52.63uS
    
-   // Time ->
-   //    _   _
-   // |_|1|_|1|  Right Channel
-   //  _   _                      (Levels change every 13.158 uS)
-   // |1|_|1|_|  Left Channel
-   //
-   // Pilot
-   //  _ _
-   // | 1 |_ _|  Pilot Signal 19KHz (Changes level every 26.316 uS)
+    Time ->
+       _   _
+    |_|1|_|1|  Right Channel
+     _   _                      (Changes level every 13.158 uS)
+    |1|_|1|_|  Left Channel
    
+    Pilot
+     _ _
+    | 1 |_ _|  Pilot Signal 19KHz (Changes level every 26.316 uS)
+ */  
 
    while(1)
    {
