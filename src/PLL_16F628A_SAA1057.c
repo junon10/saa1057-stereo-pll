@@ -4,6 +4,7 @@
   Author: Junon M
   Date: 15/09/2011
   Compiler: MikroC Pro for PIC
+  License: GPLv3
   ------------------------------------------------------------------------------
 */
 
